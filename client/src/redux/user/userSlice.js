@@ -1,14 +1,14 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = { // Fix typo from initalState to initialState
+const initialState = { 
   currentUser:null,
   error:null,
   loading:false,
 };
 
 const userSlice = createSlice({
-  name: 'user',
-  initialState, // Fix typo
+  name:'user',
+  initialState, 
   reducers: {
     signInStart: (state) => {
       state.loading = true;
